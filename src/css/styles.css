@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ img {
 
 body {
   background-color:#24292e;
-  font-family: "Kumbh Sans", sans-serif;  
+  font-family:'Poppins', sans-serif;;  
   text-align: center;    
   padding-bottom: 100px;
 }
@@ -96,6 +96,8 @@ main {
   display: flex;  
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  gap:10px;
 }
 
 .container .profile-data .info .data{
@@ -104,9 +106,9 @@ main {
 }
 
 .container .profile-data .info img{
-  width: 50%;
+  width: 40%;
   border-radius: 50%;
-  border: 10px solid hotpink;
+  
 }
 
 .container .profile-data .info h1{
@@ -132,15 +134,20 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  border-bottom:  1px solid gray;
+  padding: 40px;
 }
 
 .container .profile-data .repositories ul li a{
-  padding: 40px;
+  min-width: 200px;
+  padding: 30px;
   border: 1px solid grey;  
   margin: 20px;
-  display: block;
+  display: flex;
+  flex-direction: column;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
+  gap:10px;
 }
 
 .container .profile-data .repositories ul li a:hover{
@@ -154,7 +161,7 @@ main {
 /* Events */
 .list{
   display: flex;
-  gap: 15px;
+  flex-direction: column;
   margin-top: 10px;
   font-size: 15px;
 }
@@ -166,9 +173,16 @@ main {
   font-size: 15px;
 }
 /* ícones do repositório */
+.containerIcon{
+  display: flex;
+  width: 100%;
+  transition: 0.75s;
+}
+.containerIcon:hover{
+  transform: scale(1.1);
+}
 .icons{
-  background-color: rgb(137, 137, 245);
-  color: #fff;
+  color: #24292e;
   padding: 5px;
   border-radius: 5px;
 }
